@@ -54,8 +54,13 @@ rm -rf package/openwrt-ssrplus/luci-app-ssr-plus/po/zh_Hans 2>/dev/null
 # rm -rf feeds/packages/utils/{containerd,libnetwork,runc,tini}
 # svn co https://github.com/Lienol/openwrt-packages/trunk/utils/{containerd,libnetwork,runc,tini} feeds/packages/utils
 
+git clone https://github.com/kiddin9/openwrt-bypass/tree/main/luci-app-bypass.git package/lean/luci-app-bypass
+git clone https://github.com/kiddin9/openwrt-bypass/tree/main/smartdns-le package/lean/smartdns-le
+git clone https://github.com/kiddin9/openwrt-bypass/tree/main/lua-maxminddb package/lean/lua-maxminddb
+
 git clone https://github.com/jerrykuku/luci-app-vssr.git package/lean/luci-app-vssr
 git clone https://github.com/jerrykuku/lua-maxminddb.git package/lean/lua-maxminddb
+
 # Add third-party software packages (The entire repository)
 # git clone https://github.com/libremesh/lime-packages.git package/lime-packages
 # Add third-party software packages (Specify the package)
