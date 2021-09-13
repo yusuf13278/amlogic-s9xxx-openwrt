@@ -56,7 +56,6 @@ rm -rf package/openwrt-ssrplus/luci-app-ssr-plus/po/zh_Hans 2>/dev/null
 
 git clone https://github.com/kiddin9/openwrt-bypass.git package/luci-app-bypass
 git clone https://github.com/kiddin9/openwrt-bypass.git package/smartdns-le
-git clone https://github.com/kiddin9/openwrt-bypass.git package/lua-maxminddb
 
 git clone https://github.com/jerrykuku/luci-app-vssr.git package/luci-app-vssr
 git clone https://github.com/jerrykuku/lua-maxminddb.git package/lua-maxminddb
