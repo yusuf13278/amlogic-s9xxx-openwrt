@@ -33,28 +33,28 @@ sed -i "s|DISTRIB_REVISION='.*'|DISTRIB_REVISION='R$(date +%Y.%m.%d)'|g" package
 
 # ------------------------------- Other started -------------------------------
 #
-#Add luci-app-amlogic
+# Add luci-app-amlogic
 svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-amlogic
 
-#Add luci-app-passwall
+# Add luci-app-passwall
 svn co https://github.com/xiaorouji/openwrt-passwall/trunk package/openwrt-passwall
 
-#Add luci-app-openclash
+# Add luci-app-openclash
 svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/openwrt-openclash
 pushd package/openwrt-openclash/tools/po2lmo && make && sudo make install 2>/dev/null && popd
 
-#Add luci-app-ssr-plus
+Add luci-app-ssr-plus
 #svn co https://github.com/fw876/helloworld/trunk/luci-app-ssr-plus package/openwrt-ssrplus
-#rm -rf package/openwrt-ssrplus/luci-app-ssr-plus/po/zh_Hans 2>/dev/null
+# rm -rf package/openwrt-ssrplus/luci-app-ssr-plus/po/zh_Hans 2>/dev/null
 
-#Add luci-app-3ginfo
+# Add luci-app-3ginfo
 git clone https://github.com/liuran001/openwrt-packages package/luci-app-3ginfo
 git clone https://github.com/liuran001/openwrt-packages package/3ginfo
-#Add luci-app-filebrowser
+# Add luci-app-filebrowser
 git clone https://github.com/NueXini/NueXini_Packages package/luci-app-filebrowser
 add luci-app-modeminfo
 git clone https://github.com/NueXini/NueXini_Packages package/luci-app-modeminfo
-#Add luci-app-rclone
+# Add luci-app-rclone
 git clone https://github.com/NueXini/NueXini_Packages package/luci-app-rclone
 git clone https://github.com/NueXini/NueXini_Packages package/rclone-ng
 git clone https://github.com/NueXini/NueXini_Packages package/rclone-webui-react
