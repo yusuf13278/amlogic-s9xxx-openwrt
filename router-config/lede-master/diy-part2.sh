@@ -47,9 +47,6 @@ Add luci-app-ssr-plus
 svn co https://github.com/fw876/helloworld/trunk/luci-app-ssr-plus package/openwrt-ssrplus
 rm -rf package/openwrt-ssrplus/luci-app-ssr-plus/po/zh_Hans 2>/dev/null
 
-# Add luci-app-3ginfo
-git clone https://github.com/liuran001/openwrt-packages package/luci-app-3ginfo
-git clone https://github.com/liuran001/openwrt-packages package/3ginfo
 # Add luci-app-filebrowser
 git clone https://github.com/NueXini/NueXini_Packages package/luci-app-filebrowser
 add luci-app-modeminfo
