@@ -44,9 +44,13 @@ svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/o
 pushd package/openwrt-openclash/tools/po2lmo && make && sudo make install 2>/dev/null && popd
 
 # Add luci-app-filebrowser
-git clone https://github.com/NueXini/NueXini_Packages package/luci-app-filebrowser
-add luci-app-modeminfo
-git clone https://github.com/NueXini/NueXini_Packages package/luci-app-modeminfo
+git clone https://github.com/NueXini/NueXini_Packages.git package/luci-app-filebrowser
+# add luci-app-modeminfo
+git clone https://github.com/NueXini/NueXini_Packages.git package/luci-app-modeminfo
+# add reclone
+git clone https://github.com/NueXini/NueXini_Packages.git package/luci-app-rclone
+git clone https://github.com/NueXini/NueXini_Packages.git package/rclone-webui-react
+git clone https://github.com/NueXini/NueXini_Packages.git package/rclone
 
 # Add p7zip
 # svn co https://github.com/hubutui/p7zip-lede/trunk package/p7zip
