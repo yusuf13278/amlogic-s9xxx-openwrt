@@ -44,12 +44,7 @@ svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/o
 pushd package/openwrt-openclash/tools/po2lmo && make && sudo make install 2>/dev/null && popd
 
 # Add luci-app-ssr-plus
-svn co https://github.com/fw876/helloworld/trunk/luci-app-ssr-plus package/openwrt-ssrplus
-
-# add reclone
-git clone https://github.com/NueXini/NueXini_Packages.git package/luci-app-rclone
-git clone https://github.com/NueXini/NueXini_Packages.git package/rclone-webui-react
-git clone https://github.com/NueXini/NueXini_Packages.git package/rclone
+git clone https://github.com/fw876/helloworld/trunk/luci-app-ssr-plus package/openwrt-ssrplus
 
 # Add p7zip
 # svn co https://github.com/hubutui/p7zip-lede/trunk package/p7zip
