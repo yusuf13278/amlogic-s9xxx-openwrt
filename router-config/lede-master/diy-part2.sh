@@ -43,10 +43,9 @@ svn co https://github.com/xiaorouji/openwrt-passwall/trunk package/openwrt-passw
 svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/openwrt-openclash
 pushd package/openwrt-openclash/tools/po2lmo && make && sudo make install 2>/dev/null && popd
 
-# Add luci-app-filebrowser
-git clone https://github.com/NueXini/NueXini_Packages.git package/luci-app-filebrowser
-# add luci-app-modeminfo
-git clone https://github.com/NueXini/NueXini_Packages.git package/luci-app-modeminfo
+# Add luci-app-ssr-plus
+svn co https://github.com/fw876/helloworld/trunk/luci-app-ssr-plus package/openwrt-ssrplus
+
 # add reclone
 git clone https://github.com/NueXini/NueXini_Packages.git package/luci-app-rclone
 git clone https://github.com/NueXini/NueXini_Packages.git package/rclone-webui-react
@@ -58,12 +57,6 @@ git clone https://github.com/NueXini/NueXini_Packages.git package/rclone
 # coolsnowwolf default software package replaced with Lienol related software package
 # rm -rf feeds/packages/utils/{containerd,libnetwork,runc,tini}
 # svn co https://github.com/Lienol/openwrt-packages/trunk/utils/{containerd,libnetwork,runc,tini} feeds/packages/utils
-
-git clone https://github.com/kiddin9/openwrt-bypass.git package/luci-app-bypass
-git clone https://github.com/kiddin9/openwrt-bypass.git package/smartdns-le
-
-git clone https://github.com/jerrykuku/luci-app-vssr.git package/luci-app-vssr
-git clone https://github.com/jerrykuku/lua-maxminddb.git package/lua-maxminddb
 
 # Add third-party software packages (The entire repository)
 # git clone https://github.com/libremesh/lime-packages.git package/lime-packages
